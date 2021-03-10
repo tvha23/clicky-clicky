@@ -1,0 +1,8 @@
+<button (click)="backClicked()">go back</button>
+<h2>{{albums[albumId].title}} Details</h2>
+<div><span>id: </span>{{albums[albumId].id}}</div>
+<div><span>title: </span>{{albums[albumId].title}}</div>
+<div>
+  <label for="title">Album name: </label>
+  <input id="title" [(ngModel)]="albums[albumId].title" placeholder="title" />
+</div>

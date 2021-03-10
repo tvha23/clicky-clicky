@@ -1,0 +1,18 @@
+<!-- <button>aaa</button> -->
+<div>
+    <table style="width: 100%;">
+        <tr>
+            <th>User ID</th>
+            <th>ID</th>
+            <th>Title</th>
+        </tr>
+        <tr *ngFor="let album of albums">
+            <td>{{album.userId}}</td>
+            <a [routerLink]="['/albums', album.id]" >
+                <td>{{album.id}}</td>
+            </a>
+            <td>{{album.title}}</td>
+        </tr>
+    </table>
+
+</div>
